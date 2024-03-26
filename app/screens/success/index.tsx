@@ -5,6 +5,7 @@ import Button from "../../commons/components/Button/Button.component";
 import { useEffect } from "react";
 import useCart from "../../commons/stores/cart";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { StatusBar } from "expo-status-bar";
 
 type TSuccessPage = {
   navigation: NativeStackNavigationProp<any>;
@@ -42,6 +43,7 @@ const SuccessPage = ({ navigation }: TSuccessPage) => {
           }}
         />
       </View>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

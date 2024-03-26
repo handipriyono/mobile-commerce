@@ -7,6 +7,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useContext } from "react";
 import { LoginContextWrap } from "../../context/login";
 import Styles from "./style";
+import { StatusBar } from "expo-status-bar";
 
 type TProfile = {
   navigation: NativeStackNavigationProp<any>;
@@ -95,6 +96,7 @@ const ProfilePage = ({ navigation }: TProfile) => {
           </TouchableOpacity>
         </View>
       </View>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

@@ -5,6 +5,7 @@ import { useContext, useState } from "react";
 import { AntDesign } from "@expo/vector-icons";
 import { LoginContextWrap } from "../../context/login";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { StatusBar } from "expo-status-bar";
 import Styles from "./style";
 
 type TLogin = {
@@ -49,6 +50,7 @@ const LoginPage = ({ navigation }: TLogin) => {
           style={Styles.button}
         />
       </View>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

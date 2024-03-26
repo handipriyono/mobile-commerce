@@ -7,6 +7,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import Styles from "./style";
 import useProductQuery from "./hooks/useProductQuery";
 import AddCartButton from "../../commons/components/AddCart";
+import { StatusBar } from "expo-status-bar";
 
 type TItemList = {
   item: TProductItem;
@@ -85,6 +86,7 @@ const HomePage = ({ navigation }: THomepage) => {
           }}
         />
       </View>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

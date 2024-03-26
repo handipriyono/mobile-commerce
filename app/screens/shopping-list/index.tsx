@@ -8,6 +8,7 @@ import Button from "../../commons/components/Button/Button.component";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { TProductItem } from "../../commons/types";
 import Styles from "./style";
+import { StatusBar } from "expo-status-bar";
 
 type TShoppinglist = {
   navigation: NativeStackNavigationProp<any>;
@@ -79,6 +80,7 @@ const ShoppingList = ({ navigation }: TShoppinglist) => {
         style={{ marginTop: 20 }}
         disabled={!Object?.values(cart)?.length}
       />
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };

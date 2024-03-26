@@ -7,6 +7,7 @@ import Button from "../../commons/components/Button/Button.component";
 import { AntDesign } from "@expo/vector-icons";
 import AddCartButton from "../../commons/components/AddCart/index";
 import Styles from "./style";
+import { StatusBar } from "expo-status-bar";
 
 type TDetail = {
   route: TObj;
@@ -66,6 +67,7 @@ const DetailPage = ({ route }: TDetail) => {
         </View>
         <AddCartButton item={detailProduct} />
       </View>
+      <StatusBar style="dark" />
     </SafeAreaView>
   );
 };
